@@ -1,6 +1,7 @@
 import * as React from "react";
-import { TColorKeys, TFontVariant, getColor, getFontSize, getFontWeight } from "../../theme";
 import { StyleSheet, Text, TextProps } from "react-native";
+
+import { TColorKeys, TFontVariant, getColor, getFontSize, getFontWeight } from "../../theme";
 
 interface TypographyProps extends TextProps {
   /**
