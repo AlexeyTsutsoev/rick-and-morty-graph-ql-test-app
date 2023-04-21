@@ -49,3 +49,7 @@ Open Rick and Morty [GraphQL API](https://rickandmortyapi.com/graphql)
 
 - Commits with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [PR Template](https://github.com/AlexeyTsutsoev/rick-and-morty-graph-ql-test-app/blob/main/pull_request_template.md)
+
+## Task and Time managment:
+
+Created simple board in [Trello](https://trello.com/b/nPmMVp5G/rick-and-morty-board)
