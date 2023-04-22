@@ -28,7 +28,7 @@ export const useCharacterList = () => {
     (text: string) => {
       setCharacters([]);
       setCurrentPage(1);
-      setSearchValue(text);
+      setSearchValue(text.trim());
     },
     [setCharacters, setSearchValue, setCurrentPage],
   );

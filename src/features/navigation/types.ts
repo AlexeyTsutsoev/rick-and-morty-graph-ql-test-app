@@ -13,9 +13,9 @@ export type AppStackParamsList = {
 /**
  * Props for CharacterList screen with types for navigation
  */
-export type TCharacterListScreenStackProps = StackScreenProps<AppStackParamsList, "CharacterList">;
+export type CharacterListScreenStackProps = StackScreenProps<AppStackParamsList, "CharacterList">;
 
 /**
  * Props for CharacterDetails screen with types for navigation
  */
-export type TCharacterDetailsScreenStackProps = StackScreenProps<AppStackParamsList, "CharacterList">;
+export type CharacterDetailsScreenStackProps = StackScreenProps<AppStackParamsList, "CharacterList">;

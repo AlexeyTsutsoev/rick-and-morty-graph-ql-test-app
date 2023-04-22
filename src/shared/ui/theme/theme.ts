@@ -1,7 +1,7 @@
 import { RFValue } from "react-native-responsive-fontsize";
 
 import { COLORS, DEVICE_HEIGHT, DEVICE_WIDTH, LAYOUT_HEIGHT, LAYOUT_WIDTH } from "./constants";
-import { TColorKeys, TFontVariant, TFontWeight } from "./types";
+import { ColorVariant, FontVariant, FontWeight } from "./types";
 
 /**
  * Get scalable width
@@ -30,7 +30,7 @@ export const scaleFont = (size: number) => {
  * @param key of palette object
  * @returns valid color for render
  */
-export const getColor = (key: TColorKeys) => {
+export const getColor = (key: ColorVariant) => {
   return COLORS[key];
 };
 
@@ -39,7 +39,7 @@ export const getColor = (key: TColorKeys) => {
  * @param variant of texts
  * @returns weight for set to `fontWeight` field in StyleSheet.create
  */
-export const getFontWeight = (variant: TFontVariant): TFontWeight => {
+export const getFontWeight = (variant: FontVariant): FontWeight => {
   switch (variant) {
     case "headingLarge":
       return "800";
@@ -56,7 +56,7 @@ export const getFontWeight = (variant: TFontVariant): TFontWeight => {
  * @param variant of texts
  * @returns size for set to `fontSize` field in StyleSheet.create
  */
-export const getFontSize = (variant: TFontVariant): number => {
+export const getFontSize = (variant: FontVariant): number => {
   switch (variant) {
     case "headingLarge":
       return scaleFont(24);

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FlatList, StyleSheet } from "react-native";
 
-import { CharacterRenderData, TCardPressFunc } from "../types";
+import { CharacterRenderData, CardPressFunc } from "../types";
 import { ErrorState } from "../../../shared/ui/components/organisms";
 import { CharacterCard } from "./CharacterCard";
 import { scaleHeight } from "../../../shared/ui/theme";
@@ -13,7 +13,7 @@ interface CharacterListProps {
   isError: boolean;
   increasePage: () => void;
   onRefetch: () => void;
-  onCardPress: TCardPressFunc;
+  onCardPress: CardPressFunc;
 }
 
 export const CharacterList: React.FC<CharacterListProps> = ({
@@ -25,11 +25,10 @@ export const CharacterList: React.FC<CharacterListProps> = ({
   onRefetch,
 }) => {
   if (!data.length && isLoading) {
-    // TODO: Add Skeletons
     return <CharactersSkeleton />;
   }
 
-  if (!data.length && isError) {
+  if (isError) {
     return <ErrorState onRefetch={onRefetch} />;
   }
 

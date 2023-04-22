@@ -1,19 +1,19 @@
 import * as React from "react";
 import { StyleSheet, Text, TextProps } from "react-native";
 
-import { TColorKeys, TFontVariant, getColor, getFontSize, getFontWeight } from "../../theme";
+import { ColorVariant, FontVariant, getColor, getFontSize, getFontWeight } from "../../theme";
 
 interface TypographyProps extends TextProps {
   /**
    * variant for set up `fontWeight` and `fontSize`
    * default value -> `bodyLarge`
    */
-  variant?: TFontVariant;
+  variant?: FontVariant;
   /**
    * key of color
    * default value -> `content`
    */
-  color?: TColorKeys;
+  color?: ColorVariant;
 }
 
 /**
@@ -37,7 +37,7 @@ export const Typography: React.FC<TypographyProps> = ({
   );
 };
 
-const getStyles = (variant: TFontVariant, color: TColorKeys) => {
+const getStyles = (variant: FontVariant, color: ColorVariant) => {
   return StyleSheet.create({
     textStyle: {
       fontSize: getFontSize(variant),

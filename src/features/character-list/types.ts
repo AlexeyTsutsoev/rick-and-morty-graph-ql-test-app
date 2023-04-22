@@ -8,4 +8,4 @@ export interface CharacterRenderData {
 
 export type CharacterMapperArg = Pick<Character, "id" | "image" | "name"> | null;
 
-export type TCardPressFunc = (id: string) => void;
+export type CardPressFunc = (id: string) => void;

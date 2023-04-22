@@ -2,19 +2,19 @@ import * as React from "react";
 import { Image, StyleSheet } from "react-native";
 import { AnimatedPressable, Typography } from "../../../shared/ui/components/atoms";
 import { getColor, scaleHeight, scaleWidth } from "../../../shared/ui/theme";
-import { CharacterRenderData, TCardPressFunc } from "../types";
+import { CharacterRenderData, CardPressFunc } from "../types";
 
 interface CharacterCardProps {
   character: CharacterRenderData;
-  onPress: TCardPressFunc;
+  onPress: CardPressFunc;
 }
 
 export const CharacterCard: React.FC<CharacterCardProps> = ({ character, onPress }) => {
-  const pressHandle = React.useCallback(() => {
+  const pressHandler = React.useCallback(() => {
     onPress(character.id);
   }, [character.id, onPress]);
   return (
-    <AnimatedPressable style={styles.container} onPress={pressHandle}>
+    <AnimatedPressable style={styles.container} onPress={pressHandler}>
       <Image style={styles.image} source={{ uri: character.image }} />
 
       <Typography variant="headingSmall">{character.name}</Typography>

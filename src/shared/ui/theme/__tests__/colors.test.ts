@@ -1,5 +1,5 @@
 import { getColor } from "../theme";
-import { TColorKeys } from "../types";
+import { ColorVariant } from "../types";
 
 describe("Tests for color scheme", () => {
   it.each([
@@ -10,6 +10,6 @@ describe("Tests for color scheme", () => {
     ["secondary", "#b5b5b5"],
     ["tertiary", "#e3e1e1"],
   ])("should be equal for all pair", (input, output) => {
-    expect(getColor(input as TColorKeys)).toBe(output);
+    expect(getColor(input as ColorVariant)).toBe(output);
   });
 });

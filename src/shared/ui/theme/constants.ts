@@ -1,6 +1,6 @@
 import { Dimensions } from "react-native";
 
-import { TColors } from "./types";
+import { Palette } from "./types";
 
 const window = Dimensions.get("window");
 
@@ -27,7 +27,7 @@ export const LAYOUT_HEIGHT = 812;
 /**
  * Base colors
  */
-export const COLORS: TColors = {
+export const COLORS: Palette = {
   /**
    * main color for content
    */

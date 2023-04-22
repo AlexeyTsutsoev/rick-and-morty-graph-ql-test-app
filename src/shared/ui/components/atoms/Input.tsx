@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StyleSheet, TextInput, TextInputProps, View } from "react-native";
 
-import { TColorKeys, getColor, getFontSize, getFontWeight, scaleHeight, scaleWidth } from "../../theme";
+import { ColorVariant, getColor, getFontSize, getFontWeight, scaleHeight, scaleWidth } from "../../theme";
 
 import { Typography } from "./Typography";
 
@@ -14,7 +14,7 @@ interface InputProps extends TextInputProps {
    * overridden prop by `TextInputProps`
    * default value -> `secondary`
    */
-  placeholderTextColor?: TColorKeys;
+  placeholderTextColor?: ColorVariant;
 }
 
 export const Input: React.FC<InputProps> = ({ title, placeholderTextColor = "secondary", ...rest }) => {

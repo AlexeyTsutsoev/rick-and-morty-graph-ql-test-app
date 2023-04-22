@@ -1,12 +1,12 @@
 import * as React from "react";
-import { TCharacterListScreenStackProps } from "../types";
+import { CharacterListScreenStackProps } from "../types";
 import { CharacterListContainer } from "../../character-list/CharacterListContainer";
 
 /**
  * Navigation Wrapper for Character list.
  * For separating navigation and buisness logics
  */
-export const CharacterListScreen: React.FC<TCharacterListScreenStackProps> = ({ navigation }) => {
+export const CharacterListScreen: React.FC<CharacterListScreenStackProps> = ({ navigation }) => {
   const navigateToDetails = React.useCallback(
     (id: string) => {
       navigation.navigate("CharacterDetails", { id });

@@ -3,12 +3,12 @@ import { View, StyleSheet } from "react-native";
 
 import { getColor, scaleHeight, scaleWidth } from "../../shared/ui/theme";
 import { Input } from "../../shared/ui/components/atoms";
-import { TCardPressFunc } from "./types";
+import { CardPressFunc } from "./types";
 import { CharacterList } from "./ui/CharacterList";
 import { useCharacterList } from "./hooks/useCharacterList";
 
 interface CharacterListProps {
-  onCardPress: TCardPressFunc;
+  onCardPress: CardPressFunc;
 }
 
 export const CharacterListContainer: React.FC<CharacterListProps> = ({ onCardPress }) => {

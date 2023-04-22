@@ -1,5 +1,5 @@
 import { getFontWeight } from "../theme";
-import { TFontVariant } from "../types";
+import { FontVariant } from "../types";
 
 describe("Tests for font weight fabric", () => {
   it.each([
@@ -8,6 +8,6 @@ describe("Tests for font weight fabric", () => {
     ["bodyLarge", "600"],
     ["bodySmall", "400"],
   ])("should be equal for all pair", (input, output) => {
-    expect(getFontWeight(input as TFontVariant)).toBe(output);
+    expect(getFontWeight(input as FontVariant)).toBe(output);
   });
 });

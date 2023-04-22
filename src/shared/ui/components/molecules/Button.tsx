@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ActivityIndicator, StyleProp, StyleSheet, View, ViewStyle } from "react-native";
 
-import { TColorKeys, getColor, scaleHeight } from "../../theme";
+import { ColorVariant, getColor, scaleHeight } from "../../theme";
 import { AnimatedPressable, Typography } from "../atoms";
 
 interface ButtonProps {
@@ -9,7 +9,7 @@ interface ButtonProps {
    * set up background color
    * default value -> `accent`
    */
-  color?: TColorKeys;
+  color?: ColorVariant;
   disabled?: boolean;
   loading?: boolean;
   /**
@@ -52,7 +52,7 @@ export const Button: React.FC<ButtonProps> = ({ disabled, color = "accent", load
   );
 };
 
-const getStyles = (color: TColorKeys) => {
+const getStyles = (color: ColorVariant) => {
   return StyleSheet.create({
     container: {
       width: "100%",
