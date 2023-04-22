@@ -1,0 +1,822 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for main page should match snapshot when data empty and error 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingHorizontal": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#BC0100",
+          "fontSize": 39,
+          "fontWeight": "800",
+        },
+        Object {
+          "marginBottom": 16,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Something went wrong, please reload data.
+  </Text>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#BC0100",
+        "borderRadius": 16,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingVertical": 16,
+        "transform": Array [
+          Object {
+            "scale": 1,
+          },
+        ],
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 30,
+            "fontWeight": "600",
+          },
+          undefined,
+        ]
+      }
+    >
+      Update
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tests for main page should match snapshot when default state 1`] = `
+<RCTScrollView
+  ListHeaderComponent={
+    <DetailsHeader
+      details={
+        Object {
+          "episodes": Array [
+            Object {
+              "date": "December 2, 2013",
+              "id": "1",
+              "name": "Pilot",
+            },
+            Object {
+              "date": "December 9, 2013",
+              "id": "2",
+              "name": "Lawnmower Dog",
+            },
+          ],
+          "gender": "Male",
+          "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+          "name": "Morty Smith",
+          "species": "Human",
+        }
+      }
+    />
+  }
+  contentContainerStyle={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+      },
+      Object {
+        "paddingHorizontal": 40,
+        "paddingVertical": 16,
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "date": "December 2, 2013",
+        "id": "1",
+        "name": "Pilot",
+      },
+      Object {
+        "date": "December 9, 2013",
+        "id": "2",
+        "name": "Lawnmower Dog",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#05AFC8",
+            "borderBottomWidth": 1,
+            "marginBottom": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 16,
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+              }
+            }
+            style={
+              Object {
+                "borderRadius": 50,
+                "height": 131,
+                "marginRight": 40,
+                "width": 131,
+              }
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#121212",
+                  "fontSize": 39,
+                  "fontWeight": "800",
+                },
+                undefined,
+              ]
+            }
+          >
+            Morty Smith
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#b5b5b5",
+                  "fontSize": 30,
+                  "fontWeight": "600",
+                },
+                undefined,
+              ]
+            }
+          >
+            gender
+            : 
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#121212",
+                  "fontSize": 30,
+                  "fontWeight": "600",
+                },
+                undefined,
+              ]
+            }
+          >
+            Male
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#b5b5b5",
+                  "fontSize": 30,
+                  "fontWeight": "600",
+                },
+                undefined,
+              ]
+            }
+          >
+            species
+            : 
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#121212",
+                  "fontSize": 30,
+                  "fontWeight": "600",
+                },
+                undefined,
+              ]
+            }
+          >
+            Human
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "borderColor": "#05AFC8",
+            "borderRadius": 6,
+            "borderWidth": 1,
+            "marginBottom": 8,
+            "paddingHorizontal": 20,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 30,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          Pilot
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 23,
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          air date: 
+          December 2, 2013
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "borderColor": "#05AFC8",
+            "borderRadius": 6,
+            "borderWidth": 1,
+            "marginBottom": 8,
+            "paddingHorizontal": 20,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 30,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          Lawnmower Dog
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 23,
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          air date: 
+          December 9, 2013
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tests for main page should match snapshot when loading 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingHorizontal": 40,
+              "paddingTop": 16,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "borderRadius": 6,
+              "height": undefined,
+              "width": undefined,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 32,
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+              Object {
+                "borderRadius": 6,
+                "height": undefined,
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "borderRadius": 50,
+                  "height": 131,
+                  "marginRight": 40,
+                  "width": 131,
+                },
+                Array [
+                  Object {
+                    "overflow": "hidden",
+                  },
+                  Object {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                Object {
+                  "borderRadius": 50,
+                  "height": 131,
+                  "width": 131,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 46,
+                  "width": 300,
+                },
+                Array [
+                  Object {
+                    "overflow": "hidden",
+                  },
+                  Object {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                Object {
+                  "borderRadius": 6,
+                  "height": 46,
+                  "width": 300,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              Array [
+                Object {},
+                Array [
+                  Object {
+                    "overflow": "hidden",
+                  },
+                  Object {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                Object {
+                  "borderRadius": 6,
+                  "height": undefined,
+                  "width": undefined,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "height": 39,
+                "marginBottom": 16,
+                "width": 400,
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 39,
+                "width": 400,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 39,
+                "marginBottom": 16,
+                "width": 400,
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 39,
+                "width": 400,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 1,
+                "marginBottom": 16,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 1,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "height": 82,
+                "marginBottom": 8,
+                "width": "100%",
+              },
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              Object {
+                "borderRadius": 6,
+                "height": 82,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

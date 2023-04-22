@@ -13,7 +13,7 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Therefore it is highly recommended to use the babel or swc plugin for production.
  */
 const documents = {
-    "\n  query GetCharacterById($id: ID!) {\n    character(id: $id) {\n      id,\n      name,\n      episode {\n        id\n        name\n        air_date\n      }\n    }\n  }\n": types.GetCharacterByIdDocument,
+    "\n  query GetCharacterById($id: ID!) {\n    character(id: $id) {\n      name,\n      image,\n      species,\n      gender,\n      episode {\n        id\n        name\n        air_date\n      }\n    }\n  }\n": types.GetCharacterByIdDocument,
     "\n  query GetCharacterList($page: Int!, $name: String) {\n    characters(page: $page, filter: { name: $name }) {\n      results {\n        id,\n        image,\n        name\n      }\n      info {\n        count\n        pages\n      }\n    }\n  }\n": types.GetCharacterListDocument,
 };
 
@@ -34,7 +34,7 @@ export function gql(source: string): unknown;
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "\n  query GetCharacterById($id: ID!) {\n    character(id: $id) {\n      id,\n      name,\n      episode {\n        id\n        name\n        air_date\n      }\n    }\n  }\n"): (typeof documents)["\n  query GetCharacterById($id: ID!) {\n    character(id: $id) {\n      id,\n      name,\n      episode {\n        id\n        name\n        air_date\n      }\n    }\n  }\n"];
+export function gql(source: "\n  query GetCharacterById($id: ID!) {\n    character(id: $id) {\n      name,\n      image,\n      species,\n      gender,\n      episode {\n        id\n        name\n        air_date\n      }\n    }\n  }\n"): (typeof documents)["\n  query GetCharacterById($id: ID!) {\n    character(id: $id) {\n      name,\n      image,\n      species,\n      gender,\n      episode {\n        id\n        name\n        air_date\n      }\n    }\n  }\n"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

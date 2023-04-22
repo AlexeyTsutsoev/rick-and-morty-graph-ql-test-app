@@ -6,6 +6,7 @@ import { ErrorState } from "../../../shared/ui/components/organisms";
 import { CharacterCard } from "./CharacterCard";
 import { scaleHeight } from "../../../shared/ui/theme";
 import { CharactersSkeleton } from "./CharactersSkeleton";
+import { keyExtractor } from "../../../shared/utils";
 
 interface CharacterListProps {
   data: CharacterRenderData[];
@@ -35,7 +36,7 @@ export const CharacterList: React.FC<CharacterListProps> = ({
   return (
     <FlatList
       data={data}
-      keyExtractor={({ id }) => id}
+      keyExtractor={keyExtractor}
       contentContainerStyle={styles.contentContainer}
       renderItem={({ item }) => <CharacterCard character={item} onPress={onCardPress} />}
       showsVerticalScrollIndicator={false}

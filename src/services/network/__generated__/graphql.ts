@@ -160,8 +160,10 @@ export type GetCharacterByIdQuery = {
   __typename?: "Query";
   character?: {
     __typename?: "Character";
-    id?: string | null;
     name?: string | null;
+    image?: string | null;
+    species?: string | null;
+    gender?: string | null;
     episode: Array<{
       __typename?: "Episode";
       id?: string | null;
@@ -220,8 +222,10 @@ export const GetCharacterByIdDocument = {
             selectionSet: {
               kind: "SelectionSet",
               selections: [
-                { kind: "Field", name: { kind: "Name", value: "id" } },
                 { kind: "Field", name: { kind: "Name", value: "name" } },
+                { kind: "Field", name: { kind: "Name", value: "image" } },
+                { kind: "Field", name: { kind: "Name", value: "species" } },
+                { kind: "Field", name: { kind: "Name", value: "gender" } },
                 {
                   kind: "Field",
                   name: { kind: "Name", value: "episode" },

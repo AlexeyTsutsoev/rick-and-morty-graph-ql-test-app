@@ -18,4 +18,4 @@ export type CharacterListScreenStackProps = StackScreenProps<AppStackParamsList,
 /**
  * Props for CharacterDetails screen with types for navigation
  */
-export type CharacterDetailsScreenStackProps = StackScreenProps<AppStackParamsList, "CharacterList">;
+export type CharacterDetailsScreenStackProps = StackScreenProps<AppStackParamsList, "CharacterDetails">;
