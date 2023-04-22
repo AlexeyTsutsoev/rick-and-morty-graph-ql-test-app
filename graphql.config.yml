@@ -1,1 +1,11 @@
 schema: ./src/services/network/models/schema.graphql
+documents: ./src/**/*.graphql.ts
+extensions:
+  codegen:
+    generates:
+      ./src/services/network/__generated__/:
+        preset: client
+        plugins:
+          - typescript
+        presetConfig:
+          gqlTagName: gql
