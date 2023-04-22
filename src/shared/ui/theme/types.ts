@@ -1,7 +1,7 @@
 /**
  * Palette
  */
-export type TColors = {
+export type Palette = {
   content: string;
   background: string;
   negative: string;
@@ -13,18 +13,18 @@ export type TColors = {
 /**
  * keys for provide for mappers
  */
-export type TColorKeys = keyof TColors;
+export type ColorVariant = keyof Palette;
 
 /**
  * possible variants of text
  */
-export type TFontVariant = "headingLarge" | "headingSmall" | "bodyLarge" | "bodySmall";
+export type FontVariant = "headingLarge" | "headingSmall" | "bodyLarge" | "bodySmall";
 
 /**
  * React Native StyleSheet doesn't provide type for fontWeight.
  * We have to write our own.
  */
-export type TFontWeight =
+export type FontWeight =
   | "normal"
   | "bold"
   | "100"

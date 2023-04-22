@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for main page should match snapshot when data empty and error 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingHorizontal": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#BC0100",
+          "fontSize": 39,
+          "fontWeight": "800",
+        },
+        Object {
+          "marginBottom": 16,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Something went wrong, please reload data.
+  </Text>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#BC0100",
+        "borderRadius": 16,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingVertical": 16,
+        "transform": Array [
+          Object {
+            "scale": 1,
+          },
+        ],
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 30,
+            "fontWeight": "600",
+          },
+          undefined,
+        ]
+      }
+    >
+      Update
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tests for main page should match snapshot when default state 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "paddingBottom": 32,
+    }
+  }
+  data={
+    Array [
+      Object {
+        "id": "1",
+        "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+        "name": "Rick Sanchez",
+      },
+      Object {
+        "id": "2",
+        "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+        "name": "Morty Smith",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onEndReached={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsVerticalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#05AFC8",
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+            "opacity": 1,
+            "paddingHorizontal": 40,
+            "paddingVertical": 16,
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 50,
+              "height": 59,
+              "marginRight": 24,
+              "width": 59,
+            }
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 36,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          Rick Sanchez
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#05AFC8",
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+            "opacity": 1,
+            "paddingHorizontal": 40,
+            "paddingVertical": 16,
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 50,
+              "height": 59,
+              "marginRight": 24,
+              "width": 59,
+            }
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 36,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          Morty Smith
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tests for main page should match snapshot when loading 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "paddingBottom": 32,
+    }
+  }
+  data={
+    Array [
+      Object {
+        "id": "1",
+        "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+        "name": "Rick Sanchez",
+      },
+      Object {
+        "id": "2",
+        "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+        "name": "Morty Smith",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onEndReached={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsVerticalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#05AFC8",
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+            "opacity": 1,
+            "paddingHorizontal": 40,
+            "paddingVertical": 16,
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 50,
+              "height": 59,
+              "marginRight": 24,
+              "width": 59,
+            }
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 36,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          Rick Sanchez
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#05AFC8",
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+            "opacity": 1,
+            "paddingHorizontal": 40,
+            "paddingVertical": 16,
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 50,
+              "height": 59,
+              "marginRight": 24,
+              "width": 59,
+            }
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#121212",
+                "fontSize": 36,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          Morty Smith
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
