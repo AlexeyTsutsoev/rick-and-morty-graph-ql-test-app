@@ -7,8 +7,8 @@ describe("Tests for color scheme", () => {
     ["content", "#121212"],
     ["accent", "#05AFC8"],
     ["negative", "#BC0100"],
-    ["secondary", "#d9d9d9"],
-    ["tertiary", "#edebeb"],
+    ["secondary", "#b5b5b5"],
+    ["tertiary", "#e3e1e1"],
   ])("should be equal for all pair", (input, output) => {
     expect(getColor(input as TColorKeys)).toBe(output);
   });
